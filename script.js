@@ -247,4 +247,12 @@ document.addEventListener('DOMContentLoaded', () => {
         // Ініціалізуємо стан кнопок при завантаженні
         updateButtons();
     }
+    // --- ЛОГІКА БУРГЕР-МЕНЮ ---
+    const burgerMenu = document.querySelector('.burger-menu');
+    const navigation = document.querySelector('.navigation');
+
+    burgerMenu.addEventListener('click', () => {
+        burgerMenu.classList.toggle('is-active');
+        navigation.classList.toggle('is-open');
+    });
 });
